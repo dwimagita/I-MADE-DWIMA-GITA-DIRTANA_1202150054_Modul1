@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imadedwimagitadirtana_1202150054_si3906.studycase1.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/makan_malam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="16dp" />
+    //untuk tempat makan malam
+
+    <TextView
+        android:id="@+id/namatempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+    //untuk text view yang didapatkan nilai dari button yang dipilih
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namatempat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/menu" />
+    //untuk textview tulisan menu
+
+    <TextView
+        android:id="@+id/namamakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    //untuk memunculkan menu yang ditulis dari activity pertama akan muncul disini
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/namamakanan"
+        android:layout_marginTop="22dp"
+        android:text="@string/porsi" />
+    //untuk textview tulisan porsi
+
+    <TextView
+        android:id="@+id/jumlahporsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="visible" />
+    //untuk memunculkan jumlah porsi yang ditulis pada activity sebelumnya dan akan muncul disini
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/jumlahporsi"
+        android:layout_marginTop="26dp"
+        android:text="@string/harga" />
+    //untuk textview tulisan harga
+
+    <TextView
+        android:id="@+id/hargamakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namamakanan"
+        android:layout_alignStart="@+id/namamakanan"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="21dp"
+        android:text="@string/textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    //untuk memunculkan total harga yang akan muncul sesuai dengan kondisi
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imadedwimagitadirtana_1202150054_si3906.studycase1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="@string/makan_malam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    //untuk textview "makan malam"
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/dengan_milea" />
+    // ini untuk text view sub judul "dengan milea"
+
+    <EditText
+        android:id="@+id/namamakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="16"
+        android:hint="@string/hint"
+        android:inputType="textPersonName" />
+    //untuk memasukan nama menu
+
+    <EditText
+        android:id="@+id/jumlahporsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namamakanan"
+        android:layout_alignStart="@+id/namamakanan"
+        android:layout_below="@+id/namamakanan"
+        android:layout_marginTop="15dp"
+        android:ems="16"
+        android:hint="@string/jumlah_porsi"
+        android:inputType="number"
+        />
+  //  untuk memasukan jumlah porsi
+
+    <Button
+        android:id="@+id/button_eatbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumlahporsi"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/eatbus"
+        android:visibility="visible" />
+    //button untuk makan di eatbus
+
+    <Button
+        android:id="@+id/button_abnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_eatbus"
+        android:layout_alignBottom="@+id/button_eatbus"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/abnormal"
+        android:visibility="visible" />
+    //button untuk makan di abnormal
+</RelativeLayout>
